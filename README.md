@@ -19,3 +19,30 @@ I am not using Tmux or a vim tmux plugin since I prefer using a desktop manager 
 
 # Configuration
 
+Clone this repository into your $HOME folder so that you end up with $HOME/linux-config
+
+`git clone https://github.com/eatthoselemons/linux-config ~/.`
+
+add this to your `.bashrc`:
+
+``` shell
+if [ -f $HOME/linux-config/extra-bash ]; then
+	. $HOME/linux-config/extra-bash
+fi
+```
+
+inside vim run 
+```
+:call mkdir(stdpath('config'), 'p')
+:exe 'edit '.stdpath('config').'/init.vim'
+```
+
+then in that paste:
+
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/linux-config/vimrc
+```
+
+
