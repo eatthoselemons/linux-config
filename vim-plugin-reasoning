@@ -1,0 +1,102 @@
+auto pairs | surround | auto close
+went with vim-surround
+
+Nerd commenter | tcomment vim | commentary
+went with Nerd commenter
+
+vim fugitive | gitgutter
+went with fugitive
+
+vim indent guides
+vim easy align | tabular
+went with easy align
+
+vim easy motion
+goyo
+light line
+vim multiple cursors
+polygot *****
+vim window swap
+lightline
+limelight
+vim undotree mbbill
+fly grep
+vim test
+vim buffer gator
+emmet
+rainbow parentheses from junegunn
+'junegunn/rainbow_parentheses.vim'
+
+tagbar
+- universal-ctags hasktags gutentags.vim
+
+
+ale (asynchronous lint engine) | neomake | syntastic | neostynax
+went with ale
+
+vim dispatch
+
+
+
+
+
+
+need to install fully:
+fzf
+
+neocomplete | omnicomplete | deoplete | youcompleteme | Vimcompleteme
+mucomplete | nvim-completion-manager | asynccomplete
+supertab?
+
+
+rgrep unix
+
+
+------------ maybe do later after git familiarity
+github issues vim
+gv.vim
+git log
+-----------
+
+
+themes:
+
+vim devicons
+base16 vim
+- base16 3024
+- base16 darktooth
+- base16 codeschool
+- base16 gruvbox dark hard
+- seoul256
+gruvbox **
+airline themes
+
+
+
+regular writing tools:
+vim pencil
+vim todo
+vim markdown and vim flavored markdown
+language-tool?
+
+vim plug *| vundle *| pathogen | neobundle * |
+went with vim plug
+
+
+
+vim file
+
+listchars trailing characters
+noremap ; :
+what does ; do in vim?
+
+Unused plugins
+vim eunuch
+editor config
+
+
+unsure if I want them:
+projectionist
+vimux
+utilisnips
+cscope
