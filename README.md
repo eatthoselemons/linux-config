@@ -19,6 +19,8 @@ I am not using Tmux or a vim tmux plugin since I prefer using a desktop manager 
 
 # Install
 
+### Install dependencies
+
 To have all the features install the latest version of neovim, on Ubuntu or Pop OS! you can the neovim package (repository)[https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable]
 
 `sudo add-apt-repository ppa:neovim-ppa/stable`
@@ -29,6 +31,8 @@ Clone this repository into your $HOME folder so that you end up with $HOME/linux
 
 `git clone https://github.com/eatthoselemons/linux-config ~/.`
 
+`sudo apt-get install universal-ctags`
+### Bash Setup
 add this to your `.bashrc`:
 
 ``` shell
@@ -37,6 +41,8 @@ if [ -f $HOME/linux-config/extra-bash ]; then
 fi
 ```
 **Settings will not take effect till you restart your terminal(s)**
+
+### Vim Setup
 
 inside neovim run 
 ```
@@ -57,6 +63,8 @@ source ~/linux-config/vimrc
 
 After that run:
 `vim` in the terminal and you should be greeted with a loading of the plugins and also an nvim window
+
+### Terminal Colors
 
 This configuration uses (base16)[http://chriskempson.com/projects/base16/] for the colors of both vim and the terminal.
 
