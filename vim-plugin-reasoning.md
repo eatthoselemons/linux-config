@@ -8,7 +8,7 @@ Went with vim-plug because it seemed to be light weight, also has async and lazy
 - pathogen
 - neobundle
 
-#Synatx
+# Synatx
 
 ### vim-surround
 

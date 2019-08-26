@@ -76,3 +76,4 @@ To install base16-shell just run:
 and then use `base16_[colorscheme]` to change your terminal, I use monokai (run `base16_monokai` in the terminal)
 
 
+Documentation on all of the plugins and reasons for choosing (them)[https://github.com/eatthoselemons/linux-config/blob/master/vim-plugin-reasoning.md]
