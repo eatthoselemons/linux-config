@@ -17,7 +17,13 @@ I do however like using vim as much as possible. So if there is a plugin that ch
 I am not using Tmux or a vim tmux plugin since I prefer using a desktop manager currently messing around with i3
 
 
-# Configuration
+# Install
+
+To have all the features install the latest version of neovim, on Ubuntu or Pop OS! you can the neovim package (repository)[https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable]
+
+`sudo add-apt-repository ppa:neovim-ppa/stable`
+`sudo apt-get update`
+`sudo apt-get install neovim`
 
 Clone this repository into your $HOME folder so that you end up with $HOME/linux-config
 
@@ -30,12 +36,16 @@ if [ -f $HOME/linux-config/extra-bash ]; then
 	. $HOME/linux-config/extra-bash
 fi
 ```
+**Settings will not take effect till you restart your terminal(s)**
 
-inside vim run 
+inside neovim run 
 ```
 :call mkdir(stdpath('config'), 'p')
 :exe 'edit '.stdpath('config').'/init.vim'
 ```
+
+use `:help nvim` for info or as of Aug 2019 the default for Ubuntu is:
+`~/.config/nvim/init.vim`
 
 then in that paste:
 
@@ -44,5 +54,17 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/linux-config/vimrc
 ```
+
+After that run:
+`vim` in the terminal and you should be greeted with a loading of the plugins and also an nvim window
+
+This configuration uses (base16)[http://chriskempson.com/projects/base16/] for the colors of both vim and the terminal.
+
+I use the (base16-shell)[https://github.com/chriskempson/base16-shell] as that seems to work with most terminal and is easy to configure, I already have the bash configuration line in `./extra-bash`
+
+To install base16-shell just run:
+`git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell`
+
+and then use `base16_[colorscheme]` to change your terminal, I use monokai (run `base16_monokai` in the terminal)
 
 
