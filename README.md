@@ -10,7 +10,7 @@ From that I switched exclusively to vim and have found no reason to switch back.
 
 The biggest principal for me is to make programming comfortable, reduceing hand fatigue, moving back and forth from the mouse, switching from terminal to other applications etc.
 
-For missing out on the features of an IDE I strongly belive in the (Unix as an IDE philosophy)[https://sanctum.geek.nz/arabesque/series/unix-as-ide/]
+For missing out on the features of an IDE I strongly belive in the [Unix as an IDE philosophy](https://sanctum.geek.nz/arabesque/series/unix-as-ide/ )
 
 I do however like using vim as much as possible. So if there is a plugin that changes vim and adds terminal features to vim I am up for trying it.
 
@@ -21,7 +21,7 @@ I am not using Tmux or a vim tmux plugin since I prefer using a desktop manager 
 
 ### Install dependencies
 
-To have all the features install the latest version of neovim, on Ubuntu or Pop OS! you can the neovim package (repository)[https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable]
+To have all the features install the latest version of neovim, on Ubuntu or Pop OS! you can the neovim package [repository](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable )
 
 `sudo add-apt-repository ppa:neovim-ppa/stable`
 `sudo apt-get update`
@@ -36,7 +36,7 @@ Clone this repository into your $HOME folder so that you end up with $HOME/linux
 add this to your `.bashrc`:
 
 ``` shell
-if [ -f $HOME/linux-config/extra-bash ]; then
+if ( -f $HOME/linux-config/extra-bash ]; then
 	. $HOME/linux-config/extra-bash
 fi
 ```
@@ -66,14 +66,14 @@ After that run:
 
 ### Terminal Colors
 
-This configuration uses (base16)[http://chriskempson.com/projects/base16/] for the colors of both vim and the terminal.
+This configuration uses [base16](http://chriskempson.com/projects/base16/ ) for the colors of both vim and the terminal.
 
-I use the (base16-shell)[https://github.com/chriskempson/base16-shell] as that seems to work with most terminal and is easy to configure, I already have the bash configuration line in `./extra-bash`
+I use the [base16-shell](https://github.com/chriskempson/base16-shell ) as that seems to work with most terminal and is easy to configure, I already have the bash configuration line in `./extra-bash`
 
 To install base16-shell just run:
 `git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell`
 
-and then use `base16_[colorscheme]` to change your terminal, I use monokai (run `base16_monokai` in the terminal)
+and then use `base16_(colorscheme]` to change your terminal, I use monokai (run `base16_monokai` in the terminal)
 
 
-Documentation on all of the plugins and reasons for choosing (them)[https://github.com/eatthoselemons/linux-config/blob/master/vim-plugin-reasoning.md]
+Documentation on all of the plugins and reasons for choosing [them](https://github.com/eatthoselemons/linux-config/blob/master/vim-plugin-reasoning.md )
