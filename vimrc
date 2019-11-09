@@ -60,3 +60,13 @@ if filereadable(expand("~/.vim/vimrc_background"))
 	let base16colorspace=256
 	source ~/.vim/vimrc_background
 endif
+
+
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
+filetype plugin indent on
+
+set smartcase
+set ignorecase
