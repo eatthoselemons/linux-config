@@ -34,6 +34,7 @@ Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-dispatch'
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
 call plug#end()
@@ -70,3 +71,27 @@ filetype plugin indent on
 
 set smartcase
 set ignorecase
+syntax on
+
+
+noremap <F9>  :execute "vertical botright copen \| vertical resize 60"<cr>
+noremap <F10> :execute "copen \| resize 40"<cr>
+
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+let g:go_auto_sameids = 1
+
+" Error and warning signs.
+let g:ale_sign_error = '⤫'
+let g:ale_sign_warning = '⚠'
+
+" Enable integration with airline.
+"let g:airline#extensions#ale#enabled = 1
+
+autocmd BufNewFile,BufRead *.shlib set filetype=sh
