@@ -36,7 +36,7 @@ Clone this repository into your $HOME folder so that you end up with $HOME/linux
 add this to your `.bashrc`:
 
 ``` shell
-if ( -f $HOME/linux-config/extra-bash ]; then
+if [ -f $HOME/linux-config/extra-bash ]; then
 	. $HOME/linux-config/extra-bash
 fi
 ```
