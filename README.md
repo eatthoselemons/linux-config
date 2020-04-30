@@ -78,3 +78,7 @@ and then use `base16_(colorscheme]` to change your terminal, I use monokai (run 
 
 
 Documentation on all of the plugins and reasons for choosing [them](https://github.com/eatthoselemons/linux-config/blob/master/vim-plugin-reasoning.md )
+
+### Script
+
+If you would like a script to perform the install then use `eatthoselemonsLinuxConfig.sh` from my `arch-install` repository
