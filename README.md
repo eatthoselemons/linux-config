@@ -41,6 +41,7 @@ if [ -f $HOME/linux-config/extra-bash ]; then
 fi
 ```
 **Settings will not take effect till you restart your terminal(s)**
+Or you can use `source ~/.bashrc`. You do need to run source in each open terminal
 
 ### Vim Setup
 
