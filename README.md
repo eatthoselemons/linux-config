@@ -22,11 +22,6 @@ I do however like using vim as much as possible. So if there is a plugin that ch
 I am not using Tmux or a vim tmux plugin since I prefer using a desktop manager currently using xmonad
 
 
-# Install
-
-### Install dependencies
-
-
 ### Terminal Colors
 
 This configuration uses monokai from [base16](http://chriskempson.com/projects/base16/ ) for the colors of both vim and the terminal.
