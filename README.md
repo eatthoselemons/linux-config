@@ -42,4 +42,4 @@ example: `bash newSSHConnection user@10.0.0.1`
 
 
 Thinks to keep in mind:
-1. The default config uses termite as the terminal. Termite however isn't supported on every os by default so you will need to run `bash newSSHConnection.sh` with the server if you want to have the ssh session work correctly (one way this presents itself is that you cannot use backspace or vim doesn't show up right) Also note that the `newSSHConnection.sh` script only does it for the user you run it as. If you use another user when you are ssh'ed over termite then you will have the same issues. Run `tix -x termite.terminfo` as the user you are wanting to work.
+1. Note that the `newSSHConnection.sh` script only makes termite ssh work for the remote user you run the script as. If you use another user when you are ssh'ed over termite then you will have the same issues. Run `tix -x termite.terminfo` as the remote user you are wanting to work as
