@@ -1,6 +1,6 @@
 #vi: ft=sh
 
-alias ll="ls -la"
+alias ll="ls -lah"
 alias vim="nvim"
 
 # Base16 Shell
