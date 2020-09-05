@@ -25,19 +25,24 @@ sudo cp ~/git/linux-config/config-files/no-mouse-acceleration.conf /etc/X11/xorg
 echo "installing dependencies and utilities"
 bash ~/git/linux-config/sub-scripts/install-software.sh
 
-echo "copying inputrc"
+echo "copying files"
+echo "  copying inputrc"
 cp ~/git/linux-config/config-files/inputrc ~/.inputrc
 
-echo "copying bashrc"
+echo "  copying bashrc"
 cp ~/git/linux-config/config-files/bashrc ~/.bashrc
 
-echo "copying nvim config (nvim read vimrc)"
+echo "  copying nvim config (nvim read vimrc)"
 cp ~/git/linux-config/config-files/nvim-init ~/.config/nvim/init.vim
 
 # installing neovim plugins
 nvim -s $HOME/git/linux-config/config-files/neovimCommands
 
+echo "configuring termite"
 bash ~/git/linux-config/sub-scripts/termite-configuration.sh
+
+echo "installing gnupg"
+bash ~/git/linux-config/sub-scripts/gnupg-setup.sh
 
 # add new commands to running terminal
 source .bashrc
