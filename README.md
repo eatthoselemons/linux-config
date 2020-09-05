@@ -79,6 +79,18 @@ and then use `base16_(colorscheme]` to change your terminal, I use monokai (run 
 
 Documentation on all of the plugins and reasons for choosing [them](https://github.com/eatthoselemons/linux-config/blob/master/vim-plugin-reasoning.md )
 
+
+
+The config uses termite as the terminal. Termite however isn't supported on every os by default so you will need to run `bash newSSHConnection.sh` with the server if you want to have the ssh session work correctly (one way this presents itself is that you cannot use backspace or vim doesn't show up right)
+
+usage `bash newSSHConnection <username>@<ip-address>`
+example: `bash newSSHConnection user@10.0.0.1`
+
+# Notes
+
+Thinks to keep in mind:
+1. The default config uses termite as the terminal. Termite however isn't supported on every os by default so you will need to run `bash newSSHConnection.sh` with the server if you want to have the ssh session work correctly (one way this presents itself is that you cannot use backspace or vim doesn't show up right) Also note that the `newSSHConnection.sh` script only does it for the user you run it as. If you use another user when you are ssh'ed over termite then you will have the same issues. Run `tix -x termite.terminfo` as the user you are wanting to work.
+
 ### Script
 
-If you would like a script to perform the install then use `eatthoselemonsLinuxConfig.sh` from my `arch-install` repository
+If you would like a script to perform the install then use `install.sh`
