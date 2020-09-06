@@ -19,6 +19,16 @@ else
   git clone https://github.com/eatthoselemons/linux-config ~/git/linux-config
 fi
 
+echo "cloning or updating linux-bash-tools"
+if [[ -d $HOME/git/linux-bash-tools ]];
+then
+  cd $HOME/git/linux-bash-tools
+  git pull
+  cd $HOME
+else
+  git clone https://github.com/eatthoselemons/linux-bash-tools ~/git/linux-bash-tools
+fi
+
 echo "disabling mouse acceleration"
 sudo cp ~/git/linux-config/config-files/no-mouse-acceleration.conf /etc/X11/xorg.conf.d/no-mouse-acceleration.conf
 

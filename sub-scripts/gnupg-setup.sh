@@ -1,3 +1,4 @@
+source ~/git/linux-bash-tools/libs/error-handling.shlib
 # adding gnupg for gpg-agent to manage ssh keys
 cat << 'EOF' >> $HOME/.bashrc
 # set gpg-agent as default

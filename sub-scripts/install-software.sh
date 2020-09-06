@@ -1,4 +1,10 @@
+source ~/git/linux-bash-tools/libs/error-handling.shlib
 # install required utilities
+
+# check for os type
+
+osType=$(cat /etc/issue)
+
 echo "installing prerequisite utilities"
 sudo pacman -S --noconfirm git vim universal-ctags neovim mlocate
 

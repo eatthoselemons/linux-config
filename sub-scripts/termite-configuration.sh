@@ -1,3 +1,4 @@
+source ~/git/linux-bash-tools/libs/error-handling.shlib
 # get termite color schemes
 echo "cloning termite color schemes"
 if [[ -d ~/git/base16-termite ]]
