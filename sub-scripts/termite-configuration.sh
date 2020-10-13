@@ -3,6 +3,7 @@ source ~/git/linux-bash-tools/libs/error-handling.shlib
 echo "cloning termite color schemes"
 if [[ -d ~/git/base16-termite ]]
 then
+  cd ~/git/base16-termite
   git pull
 else
   git clone https://github.com/khamer/base16-termite.git ~/git/base16-termite
