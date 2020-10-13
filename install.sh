@@ -46,7 +46,7 @@ echo "  copying nvim config (nvim read vimrc)"
 cp ~/git/linux-config/config-files/nvim-init ~/.config/nvim/init.vim
 
 # installing neovim plugins
-nvim -s $HOME/git/linux-config/config-files/neovimCommands
+nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
 
 echo "configuring termite"
 bash ~/git/linux-config/sub-scripts/termite-configuration.sh
@@ -56,6 +56,7 @@ bash ~/git/linux-config/sub-scripts/gnupg-setup.sh
 
 # add new commands to running terminal
 source .bashrc
-source .inputrc
+
+echo "cant source .inputrc for some reason that breaks things"
 
 # mlocate database cronjob
