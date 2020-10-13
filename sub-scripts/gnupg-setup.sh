@@ -17,4 +17,5 @@ EOF
 # also set the pinentry program to start in the active terminal not the first terminal
 mkdir -p $HOME/.gnupg
 echo "pinentry-program /usr/bin/pinentry-curses" > $HOME/.gnupg/gpg-agent.conf
+mkdir -p $HOME/.ssh
 echo 'Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"' >> ~/.ssh/config
