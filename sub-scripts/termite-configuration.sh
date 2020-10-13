@@ -5,7 +5,7 @@ if [[ -d ~/git/base16-termite ]]
 then
   git pull
 else
-  git clone https://github.com/khamer/base16-termite.git
+  git clone https://github.com/khamer/base16-termite.git ~/git/base16-termite
 fi
 
 echo "setting up termite"
@@ -32,4 +32,4 @@ sed -ri 's:(cursor\s*)=\s*#[a-z0-9]{6}:\1= #939390:g' ~/.config/termite/config
 sed -ri 's:(color7\s*)=\s*#[a-z0-9]{6}:\1= #a8a9a6:g' ~/.config/termite/config
 
 echo "copying file for new ssh connections to home directory"
-cp ~/git/linux-config/newSSHConnection.sh $HOME/newSSHConnection.sh
+cp ~/git/linux-config/utility-scripts/newSSHConnection.sh $HOME/newSSHConnection.sh
