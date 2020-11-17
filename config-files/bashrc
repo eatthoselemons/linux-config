@@ -101,6 +101,7 @@ alias ldu='du -shc --threshold=5k ./*/ | sort -hr'
 alias ll="ls -lah"
 alias vim="nvim"
 alias mv="mv -vn"
+alias ip="ip -c"
 
 
 xhost +local:root > /dev/null 2>&1
@@ -189,7 +190,8 @@ ${grey}@${reset}\
 ${yellow}\h${reset}\
 ${blue} \w${reset}\
 ${grey}]${reset}\
-${myGreenCyan} λ ${reset}"
+\n\
+             ${myGreenCyan} λ ${reset}"
 }
 function simplePrompt () {
 export PS1="\
