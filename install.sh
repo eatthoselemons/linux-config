@@ -42,6 +42,7 @@ cp ~/git/linux-config/config-files/inputrc ~/.inputrc
 echo "  copying bashrc"
 cp ~/git/linux-config/config-files/bashrc ~/.bashrc
 
+mkdir -p ~/.config/nvim
 echo "  copying nvim config (nvim read vimrc)"
 cp ~/git/linux-config/config-files/nvim-init ~/.config/nvim/init.vim
 
