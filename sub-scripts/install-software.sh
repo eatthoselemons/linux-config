@@ -15,6 +15,7 @@ sudo pacman -S --noconfirm xmonad xmonad-contrib xterm
 # install other useful programs
 echo "installing other programs, git, firefox etc"
 sudo pacman -S --noconfirm git firefox udisks2 ripgrep pavucontrol gnupg usbutils unzip nemo
+sudo pacman -S --noconfirm adobe-source-han-sans-otc-fonts
 
 # install termite
 echo "installing termite terminal emulator"
