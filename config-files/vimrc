@@ -10,13 +10,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'https://github.com/tpope/vim-surround.git' 
 Plug 'scrooloose/nerdcommenter'
-Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Plug 'https://github.com/junegunn/vim-easy-align.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
-Plug 'https://github.com/junegunn/goyo.vim.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
-Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 Plug 'https://github.com/sheerun/vim-polyglot.git'
 Plug 'https://github.com/wesQ3/vim-windowswap.git'
 Plug 'https://github.com/junegunn/limelight.vim.git'
@@ -35,9 +32,10 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-repeat'
+"items after this might be deleted
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/junegunn/goyo.vim.git'
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-
 call plug#end()
 
 "colorscheme seoul256
