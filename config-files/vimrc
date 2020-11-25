@@ -58,6 +58,10 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=8
 let g:indent_guides_guide_size = 1
 
+"limelight doesn't support the colorscheme so just makes everything not
+"highlighted grey
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
 
 
 inoremap jk <Esc>
