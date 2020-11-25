@@ -34,6 +34,7 @@ Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-repeat'
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
