@@ -8,20 +8,21 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'https://github.com/tpope/vim-surround.git' 
+Plug 'tpope/vim-surround' 
 Plug 'scrooloose/nerdcommenter'
-Plug 'nathanaelkane/vim-indent-guides.git'
-Plug 'junegunn/vim-easy-align.git'
-Plug 'easymotion/vim-easymotion.git'
-Plug 'itchyny/lightline.vim.git'
-Plug 'sheerun/vim-polyglot.git'
-Plug 'wesQ3/vim-windowswap.git'
-Plug 'junegunn/limelight.vim.git'
-Plug 'mbbill/undotree.git'
-Plug 'wsdjeg/FlyGrep.vim.git'
-Plug 'jeetsukumaran/vim-buffergator.git'
-Plug 'mattn/emmet-vim.git'
-Plug 'chriskempson/base16-vim.git'
+Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'junegunn/vim-easy-align'
+Plug 'easymotion/vim-easymotion'
+Plug 'itchyny/lightline.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'wesQ3/vim-windowswap'
+Plug 'junegunn/limelight.vim'
+Plug 'mbbill/undotree'
+Plug 'wsdjeg/FlyGrep.vim'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'mattn/emmet-vim'
+Plug 'chriskempson/base16-vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'adelarsq/vim-hackernews'
 Plug 'tpope/vim-sensible'
@@ -32,9 +33,9 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-repeat'
 "items after this might be deleted
-Plug 'https://github.com/tpope/vim-fugitive.git'
-Plug 'https://github.com/junegunn/goyo.vim.git'
-Plug 'https://github.com/janko/vim-test.git'
+Plug 'tpope/vim-five'
+Plug 'junegunn/goyo.vim'
+Plug 'janko/vim-test'
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
@@ -52,11 +53,8 @@ let g:NERDSpaceDelims = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-"vim indent guides config
-let g:indent_guides_auto_colors = 0
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=7
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=8
-let g:indent_guides_guide_size = 1
+"vim indentLine config
+let g:indentLine_char = '▏'
 
 "limelight doesn't support the colorscheme so just makes everything not
 "highlighted grey
