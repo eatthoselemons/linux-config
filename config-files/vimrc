@@ -26,11 +26,9 @@ Plug 'chriskempson/base16-vim'
 Plug 'luochen1990/rainbow'
 Plug 'adelarsq/vim-hackernews'
 Plug 'tpope/vim-sensible'
-Plug 'junegunn/seoul256.vim'
 Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'dense-analysis/ale'
-Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-repeat'
 "items after this might be deleted
 Plug 'janko/vim-test'
@@ -38,8 +36,6 @@ Plug 'junegunn/vader.vim'
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
-"colorscheme seoul256
-"let g:seoul256_background=235
 
 set background=dark
 
