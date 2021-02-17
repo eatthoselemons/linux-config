@@ -43,3 +43,7 @@ example: `bash newSSHConnection user@10.0.0.1`
 
 Thinks to keep in mind:
 1. Note that the `newSSHConnection.sh` script only makes termite ssh work for the remote user you run the script as. If you use another user when you are ssh'ed over termite then you will have the same issues. Run `tix -x termite.terminfo` as the remote user you are wanting to work as
+
+Tridactyl config:
+set interface to work in the center rather than the bottom:
+`:colorscheme shydactyl`
