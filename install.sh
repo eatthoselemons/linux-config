@@ -30,21 +30,21 @@ else
 fi
 
 echo "disabling mouse acceleration"
-sudo cp ~/git/linux-config/config-files/no-mouse-acceleration.conf /etc/X11/xorg.conf.d/no-mouse-acceleration.conf
+sudo cp ~/git/linux-config/config-files/local/no-mouse-acceleration.conf /etc/X11/xorg.conf.d/no-mouse-acceleration.conf
 
 echo "installing dependencies and utilities"
 bash ~/git/linux-config/sub-scripts/install-software.sh
 
 echo "copying files"
 echo "  copying inputrc"
-cp ~/git/linux-config/config-files/inputrc ~/.inputrc
+cp ~/git/linux-config/config-files/local/inputrc ~/.inputrc
 
 echo "  copying bashrc"
-cp ~/git/linux-config/config-files/bashrc ~/.bashrc
+cp ~/git/linux-config/config-files/local/bashrc ~/.bashrc
 
 mkdir -p ~/.config/nvim
 echo "  copying nvim config (nvim read vimrc)"
-cp ~/git/linux-config/config-files/nvim-init ~/.config/nvim/init.vim
+cp ~/git/linux-config/config-files/local/nvim-init ~/.config/nvim/init.vim
 
 # installing neovim plugins
 nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
