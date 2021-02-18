@@ -19,6 +19,8 @@ sudo pacman -S --noconfirm git firefox udisks2 ripgrep pavucontrol gnupg usbutil
 # install fonts with Asian typefonts
 echo "installing additional typefonts"
 sudo pacman -S --noconfirm adobe-source-han-sans-otc-fonts
+# install nerd fonts
+sudo pacman -S --noconfirm ttf-nerd-fonts-symbols-mono
 
 # install termite
 echo "installing termite terminal emulator"
