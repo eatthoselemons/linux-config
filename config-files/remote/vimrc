@@ -1,0 +1,25 @@
+set background=dark
+
+inoremap jk <Esc>
+
+noremap H ^
+noremap L $
+
+noremap J 10j
+noremap K 10k
+
+let mapleader=","
+
+set number
+
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
+filetype plugin indent on
+
+set smartcase
+set ignorecase
+syntax on
+
+autocmd BufNewFile,BufRead *.shlib set filetype=sh
