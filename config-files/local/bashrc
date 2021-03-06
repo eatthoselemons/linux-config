@@ -100,7 +100,8 @@ alias more=less
 alias ldu='du -shc --threshold=5k ./*/ | sort -hr'
 alias ll="ls -lah"
 alias vim="nvim"
-alias mv="mv -vn"
+alias mv="mv -ivn"
+alias rm="rm -i"
 alias ip="ip -c"
 alias rsync="rsync -ah --info=progress2 --ignore-existing"
 
