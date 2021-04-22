@@ -13,7 +13,7 @@ From that I switched exclusively to vim and have found no reason to switch back.
 
 ### Philosophy of this configuration
 
-The biggest principal for me is to make programming comfortable, reduceing hand fatigue, moving back and forth from the mouse, switching from terminal to other applications etc.
+The biggest principal for me is to make programming comfortable, reduceing hand fatigue, reducing moving back and forth from the mouse, switching from terminal to other applications etc.
 
 For missing out on the features of an IDE I strongly belive in the [Unix as an IDE philosophy](https://sanctum.geek.nz/arabesque/series/unix-as-ide/ )
 
@@ -47,3 +47,8 @@ Thinks to keep in mind:
 Tridactyl config:
 set interface to work in the center rather than the bottom:
 `:colorscheme shydactyl`
+
+
+### Config Notes
+#### mouse
+the mouse sensitivity is set via Xorg transformation matrix, use ```````mouse-sensitivity.sh` from [linux-bash-tools](https://github.com/eatthoselemons/linux-bash-tools) to find an sensitivity that works for you then change the first two "1"'s in `no-mouse-acceleration.conf` under "TransformationMatrix" to what you found you liked from the script
