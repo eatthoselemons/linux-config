@@ -38,9 +38,6 @@ if empty(glob('~/.local/share/nvim/plugged/nvim-treesitter/parser/haskell.so'))
 endif
 
 
-
-
-
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-surround' 
@@ -174,6 +171,7 @@ let g:compe.source.calc = v:true
 let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 let g:compe.source.vsnip = v:true
+set completeopt=menuone,preview
 
 
 " enable tab for autocomplete selection
@@ -187,3 +185,6 @@ inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 
+lua << EOF
+require'lspconfig'.kotlin_language_server.setup{}
+EOF
