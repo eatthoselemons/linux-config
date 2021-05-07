@@ -1,0 +1,13 @@
+nvim treesitter requires nvim nightly, need to add the install script:
+
+# Install neovim nightly
+curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim.appimag    e -o /tmp/nvim-nightly;
+chmod +x /tmp/nvim-nightly;
+sudo mv /tmp/nvim-nightly /usr/local/bin;
+
+add nvim-treesitter
+add language server systemd services
+add clang
+add nvim-compe
+add nvim-nightly alias
+remove .bashrc nvim-init.sh line
