@@ -38,6 +38,8 @@ if empty(glob('~/.local/share/nvim/plugged/nvim-treesitter/parser/haskell.so'))
 endif
 
 
+
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-surround' 
@@ -185,6 +187,33 @@ inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 
+" lua << EOF
+" require'lspconfig'.kotlin_language_server.setup{}
+" EOF
+
+
+
 lua << EOF
-require'lspconfig'.kotlin_language_server.setup{}
+local nvim_lsp = require'lspconfig'
+local configs = require'lspconfig/configs'
+local on_attach = function(client, bufnr)
+  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+end
+nvim_lsp.util.default_config = vim.tbl_extend(
+  "force",
+  nvim_lsp.util.default_config,
+  { 
+    root_dir = function(fname)
+      return lspconfig.util.find_git_ancestor(fname) or vim.loop.os_homedir()
+    end
+  }
+)
+
+-- Use a loop to conveniently both setup defined servers 
+-- and map buffer local keybindings when the language server attaches
+local servers = { "kotlin_language_server" }
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup { on_attach = on_attach }
+end
 EOF
+
