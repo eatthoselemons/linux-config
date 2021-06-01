@@ -81,7 +81,7 @@ set background=dark
 nnoremap tt :TagbarToggle<CR>
 
 " easymotion
-map <Leader> <Plug>(easymotion-prefix)
+map <Leader>w <Plug>(easymotion-w)
 map s <Plug>(easymotion-s)
 
 inoremap jk <Esc>
