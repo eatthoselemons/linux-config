@@ -4,6 +4,8 @@ trap_msg='s=${?}; echo "${0}: Error on line "${LINENO}": ${BASH_COMMAND}"; exit 
 set -uo pipefail
 trap "${trap_msg}" ERR
 
+# create temp folder
+mkdir ~/install-temp
 
 mkdir -p ~/git
 echo "installing git"
@@ -42,12 +44,33 @@ cp ~/git/linux-config/config-files/local/inputrc ~/.inputrc
 echo "  copying bashrc"
 cp ~/git/linux-config/config-files/local/bashrc ~/.bashrc
 
+#source bashrc so rest of config can use it
+souce ~/.bashrc
+
 mkdir -p ~/.config/nvim
 echo "  copying nvim config (nvim read vimrc)"
 cp ~/git/linux-config/config-files/local/nvim-init ~/.config/nvim/init.vim
 
+# grab nvim nightly, put in temp folder, and add to path folder
+cd ~/install-temp
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz 
+ex nvim-linux64.tar.gz
+cp nvim-linux64/bin/nvim /usr/local/bin/nvim-nightly
+
 # installing neovim plugins
 nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
+
+# install language servers
+bash ~/git/linux-config/sub-scripts/nvim-language-servers-install.sh
+
+# install intellij
+mkdir ~/programs/jetbrains
+cd ~/programs/jetbrains
+#install toolbox
+wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.8352.tar.gz
+ex jetbrains-toolbox-1.20.8352.tar.gz
+cp jetbrains-toolbox-1.20.8352/jetbrains-toolbox /usr/local/bin/
+
 
 echo "configuring termite"
 bash ~/git/linux-config/sub-scripts/termite-configuration.sh
