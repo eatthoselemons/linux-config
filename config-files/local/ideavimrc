@@ -1,0 +1,18 @@
+inoremap jk <Esc>
+noremap J 10j
+noremap K 10k
+noremap H ^
+noremap L $
+
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
+set smartcase
+set ignorecase
+
+let mapleader=","
+set easymotion
+# map <Leader> <Plug>(easymostion-prefix)
+map <Leader>w <Plug>(easymotion-w)
+map s <Plug>(easymotion-s)
