@@ -73,8 +73,26 @@ Plug 'junegunn/vader.vim'
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
+let mapleader=","
 
 set background=dark
+
+" tag bar
+nnoremap tt :TagbarToggle<CR>
+
+" easymotion
+map <Leader> <Plug>(easymotion-prefix)
+map s <Plug>(easymotion-s)
+
+inoremap jk <Esc>
+
+noremap H ^
+noremap L $
+
+noremap J 10j
+noremap K 10k
+
+set number
 
 " nerd commenter values
 
@@ -93,24 +111,6 @@ let g:indentLine_char = '▏'
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 
-"tag bar
-nnoremap tt :TagbarToggle<CR>
-
-" easymotion
-map <Leader> <Plug>(easymotion-prefix)
-map s <Plug>(easymotion-s)
-
-inoremap jk <Esc>
-
-noremap H ^
-noremap L $
-
-noremap J 10j
-noremap K 10k
-
-let mapleader=","
-
-set number
 
 if filereadable(expand("~/.vim/vimrc_background"))
 	let base16colorspace=256
