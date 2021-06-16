@@ -25,6 +25,6 @@ sudo pacman -S --noconfirm adobe-source-han-sans-otc-fonts
 # install nerd fonts
 sudo pacman -S --noconfirm ttf-nerd-fonts-symbols-mono
 
-# install termite
-echo "installing termite terminal emulator"
-sudo pacman -S --noconfirm termite
+# install alacritty
+echo "installing alacritty terminal emulator"
+sudo pacman -S --noconfirm alacritty

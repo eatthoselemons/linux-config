@@ -82,7 +82,7 @@ cd ~/.fonts/jetbrainsmono
 ex JetBrainsMono.zip
 
 
-echo "configuring termite"
+echo "configuring alacritty"
 bash ~/git/linux-config/sub-scripts/alacritty-configuration.sh
 
 echo "installing gnupg"
