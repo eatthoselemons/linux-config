@@ -71,9 +71,19 @@ wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.8352.tar.gz
 ex jetbrains-toolbox-1.20.8352.tar.gz
 cp jetbrains-toolbox-1.20.8352/jetbrains-toolbox /usr/local/bin/
 
+# install fonts setup
+mkdir ~/.fonts
+
+# install jetbrains nerd-fonts
+curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip -o ~/install-temp/
+mkdir ~/.fonts/jetbrainsmono/
+mv ~/install-temp/JetBrainsMono.zip ~/.fonts/jetbrainsmono/
+cd ~/.fonts/jetbrainsmono
+ex JetBrainsMono.zip
+
 
 echo "configuring termite"
-bash ~/git/linux-config/sub-scripts/termite-configuration.sh
+bash ~/git/linux-config/sub-scripts/alacritty-configuration.sh
 
 echo "installing gnupg"
 bash ~/git/linux-config/sub-scripts/gnupg-setup.sh

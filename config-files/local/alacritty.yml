@@ -1,0 +1,67 @@
+# Colors (Monokai Dark)
+colors:
+  # Default colors
+  primary:
+    background: '#272822'
+    foreground: '#f8f8f2'
+
+  cursor:
+    # text is the color when the cusor is over a letter
+    text: '#000000'
+    cursor: '#939390'
+
+  # Normal colors
+  normal:
+    black:   '#272822'
+    red:     '#F92672'
+    green:   '#A6E22E'
+    yellow:  '#F4BF75'
+    blue:    '#66D9EF'
+    magenta: '#AE81FF'
+    # origionally #A1EFE4
+    cyan:    '#afbc2b'
+    # origionally #F8F8F2
+    white:   '#a8a9a6'
+
+  # Bright colors
+  bright:
+    black:   '#75715E'
+    red:     '#F92672'
+    green:   '#A6E22E'
+    yellow:  '#F4BF75'
+    blue:    '#66D9EF'
+    magenta: '#AE81FF'
+    # origionally #A1EFE4
+    cyan:    '#afbc2b'
+    white:   '#F9F8F5'
+
+scrolling:
+  # maximum number of lines in the scrollback buffer. Specifying '0' will
+  # disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+
+
+font: 
+  normal:
+    family: Victor Mono Nerd Font Mono
+    style: semibold
+  bold:
+    family: JetBrainsMonoExtraBold Nerd Font Mono
+    style: Extra Bold
+  italic:
+    family: Victor Mono Nerd Font
+    style: Italic
+  size: 13.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+
+
