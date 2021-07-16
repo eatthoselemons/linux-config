@@ -18,3 +18,5 @@ map <Leader>w <Plug>(easymotion-w)
 map <Leader>j <Plug>(easymotion-sol-j)
 map <Leader>k <Plug>(easymotion-sol-k)
 map s <Plug>(easymotion-s)
+
+sethandler <Ctrl-z> n-i:ide
