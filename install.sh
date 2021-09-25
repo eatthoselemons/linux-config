@@ -68,14 +68,6 @@ sudo cp jetbrains-toolbox-1.20.8352/jetbrains-toolbox /usr/local/bin/
 # install fonts setup
 mkdir -p ~/.fonts
 
-# install jetbrains nerd-fonts
-curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip -o ~/install-temp/JetBrainsMono.zip
-mkdir -p ~/.fonts/jetbrainsmono/
-mv ~/install-temp/JetBrainsMono.zip ~/.fonts/jetbrainsmono/
-cd ~/.fonts/jetbrainsmono
-unzip JetBrainsMono.zip
-
-
 echo "configuring alacritty"
 bash ~/git/linux-config/sub-scripts/alacritty-configuration.sh
 

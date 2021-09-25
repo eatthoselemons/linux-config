@@ -6,12 +6,12 @@ then
   cd ~/temp/nerd-fonts-complete
   git pull
 else
-  https://aur.archlinux.org/nerd-fonts-complete.git ~/temp/nerd-fonts-complete
+  git clone https://aur.archlinux.org/nerd-fonts-complete.git ~/temp/nerd-fonts-complete
 fi
 
 cd ~/temp/nerd-fonts-complete
 makepkg
-sudo pacman -U nerd-fonts-complete.*.pkg.tar.zst
+ls *.pkg.tar.zst | xargs sudo pacman -U
 
 mkdir ~/.config/alacritty
 cp ~/git/linux-config/config-files/local/alacritty.yml ~/.config/alacritty/alacritty.yml
