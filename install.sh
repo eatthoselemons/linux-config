@@ -51,12 +51,6 @@ mkdir -p ~/.config/nvim
 echo "  copying nvim config (nvim read vimrc)"
 cp ~/git/linux-config/config-files/local/nvim-init ~/.config/nvim/init.vim
 
-# grab nvim nightly, put in temp folder, and add to path folder
-#cd ~/install-temp
-#wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz 
-#ex nvim-linux64.tar.gz
-#cp nvim-linux64/bin/nvim /usr/local/bin/nvim-nightly
-
 # installing neovim plugins
 nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
 
