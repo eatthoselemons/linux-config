@@ -10,10 +10,10 @@ else
 fi
 
 cd ~/temp/nerd-fonts-complete
-makepkg
-ls *.pkg.tar.zst | xargs sudo pacman -U
+makepkg -f
+ls *.pkg.tar.zst | xargs sudo pacman -U --noconfirm
 
-mkdir ~/.config/alacritty
+mkdir -p ~/.config/alacritty
 cp ~/git/linux-config/config-files/local/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 

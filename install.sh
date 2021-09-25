@@ -75,7 +75,7 @@ echo "installing gnupg"
 bash ~/git/linux-config/sub-scripts/gnupg-setup.sh
 
 # add new commands to running terminal
-source .bashrc
+source ~/.bashrc
 
 echo "cant source .inputrc for some reason that breaks things. To apply .inputrc logout and login again"
 
