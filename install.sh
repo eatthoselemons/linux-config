@@ -57,13 +57,8 @@ nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
 # install language servers
 #bash ~/git/linux-config/sub-scripts/nvim-language-servers-install.sh
 
-# install intellij
-mkdir -p ~/programs/jetbrains
-cd ~/programs/jetbrains
-#install toolbox
-wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.8352.tar.gz
-tar -xf jetbrains-toolbox-1.20.8352.tar.gz
-sudo cp jetbrains-toolbox-1.20.8352/jetbrains-toolbox /usr/local/bin/
+# install jetbrains products
+bash ~/git/linux-config/sub-scripts/setup-jetbrains-tools.sh
 
 # install fonts setup
 mkdir -p ~/.fonts
