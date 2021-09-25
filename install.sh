@@ -39,23 +39,23 @@ bash ~/git/linux-config/sub-scripts/install-software.sh
 
 echo "copying files"
 echo "  copying inputrc"
-cp ~/git/linux-config/config-files/local/inputrc ~/.inputrc
+ln -s ~/git/linux-config/config-files/local/inputrc ~/.inputrc
 
 echo "  copying bashrc"
-cp ~/git/linux-config/config-files/local/bashrc ~/.bashrc
+ln -s ~/git/linux-config/config-files/local/bashrc ~/.bashrc
 
 #source bashrc so rest of config can use it
 source ~/.bashrc
 
 mkdir -p ~/.config/nvim
 echo "  copying nvim config (nvim read vimrc)"
-cp ~/git/linux-config/config-files/local/nvim-init ~/.config/nvim/init.vim
+ln -s ~/git/linux-config/config-files/local/nvim-init ~/.config/nvim/init.vim
 
 # installing neovim plugins
 nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
 
 # install language servers
-#bash ~/git/linux-config/sub-scripts/nvim-language-servers-install.sh
+# bash ~/git/linux-config/sub-scripts/nvim-language-servers-install.sh
 
 # install jetbrains products
 bash ~/git/linux-config/sub-scripts/setup-jetbrains-tools.sh
@@ -68,6 +68,10 @@ bash ~/git/linux-config/sub-scripts/alacritty-configuration.sh
 
 echo "installing gnupg"
 bash ~/git/linux-config/sub-scripts/gnupg-setup.sh
+
+# new ssh connections script
+echo "copying file for new ssh connections to home directory"
+ln -s ~/git/linux-config/utility-scripts/newSSHConnection.sh $HOME/newSSHConnection.sh
 
 # add new commands to running terminal
 source ~/.bashrc

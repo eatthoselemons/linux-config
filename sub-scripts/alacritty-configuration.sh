@@ -14,11 +14,9 @@ makepkg -f
 ls *.pkg.tar.zst | xargs sudo pacman -U --noconfirm
 
 mkdir -p ~/.config/alacritty
-cp ~/git/linux-config/config-files/local/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -s ~/git/linux-config/config-files/local/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 
 # other green color options:
 # b1be2c, a8b14c, b7c42d
 
-echo "copying file for new ssh connections to home directory"
-cp ~/git/linux-config/utility-scripts/newSSHConnection.sh $HOME/newSSHConnection.sh
