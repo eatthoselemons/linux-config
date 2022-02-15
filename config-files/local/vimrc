@@ -217,3 +217,5 @@ for _, lsp in ipairs(servers) do
 end
 EOF
 
+" set conceallevel=0
+let g:indentLine_fileTypeExclude = ['json', 'markdown']
