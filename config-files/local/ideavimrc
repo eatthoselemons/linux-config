@@ -20,3 +20,6 @@ map <Leader>k <Plug>(easymotion-sol-k)
 map s <Plug>(easymotion-s)
 
 sethandler <Ctrl-z> n-i:ide
+
+nmap gi :action GotoImplementation<CR>
+nmap gt :action GotoTest<CR>

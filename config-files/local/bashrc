@@ -202,7 +202,7 @@ export PS1="\
 ${grey}[${reset}\
 ${blue}\W${reset}\
 ${grey}]${reset}\
-${green} λ ${reset}"
+${green} $ ${reset}"
 }
 
 
