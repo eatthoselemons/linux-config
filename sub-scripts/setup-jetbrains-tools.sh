@@ -10,4 +10,5 @@ wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.8352.tar.gz
 tar -xf jetbrains-toolbox-1.20.8352.tar.gz
 sudo cp jetbrains-toolbox-1.20.8352/jetbrains-toolbox /usr/local/bin/
 
-ln -s $HOME/git/linux-config/local/ideavimrc $HOME/.ideavimrc
+if [ -f ~/.ideavimrc ]; then rm ~/.ideavimrc; fi
+ln -s $HOME/git/linux-config/config-files/local/ideavimrc ~/.ideavimrc

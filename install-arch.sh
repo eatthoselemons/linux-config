@@ -35,7 +35,7 @@ echo "disabling mouse acceleration"
 sudo cp ~/git/linux-config/config-files/local/no-mouse-acceleration.conf /etc/X11/xorg.conf.d/no-mouse-acceleration.conf
 
 echo "installing dependencies and utilities"
-bash ~/git/linux-config/sub-scripts/install-software.sh
+bash ~/git/linux-config/sub-scripts/install-software-arch.sh
 
 echo "copying files"
 echo "  copying inputrc"
