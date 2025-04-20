@@ -49,14 +49,19 @@ ln -s ~/git/linux-config/config-files/local/bashrc ~/.bashrc
 source ~/.bashrc
 
 mkdir -p ~/.config/nvim
-echo "  copying nvim config (nvim read vimrc)"
+echo "  setting up nvim lua config"
+if [ -f ~/.config/nvim/init.lua ]; then rm ~/.config/nvim/init.lua; fi
 if [ -f ~/.config/nvim/init.vim ]; then rm ~/.config/nvim/init.vim; fi
-ln -s ~/git/linux-config/config-files/local/nvim-init ~/.config/nvim/init.vim
+ln -s ~/git/linux-config/config-files/local/nvim-init.lua ~/.config/nvim/init.lua
 
 # installing neovim plugins
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-nvim -s $HOME/git/linux-config/sub-scripts/neovimCommands
+mkdir -p ~/.config/nvim/lua/config
+mkdir -p ~/.config/nvim/lua/plugins
+echo "installing neovim lazy load plugin"
+if [ -f ~/.config/nvim/lua/config/lazy.lua ]; then rm ~/.config/nvim/lua/config/lazy.lua; fi
+if [ -f ~/.config/nvim/lua/plugins/spec1.lua ]; then rm ~/.config/nvim/lua/plugins/spec1.lua; fi
+ln -s ~/git/linux-config/config-files/local/neovim-lazy-plugin-manager-bootstrap.lua ~/.config/nvim/lua/config/lazy.lua
+ln -s ~/git/linux-config/config-files/local/neovim-lazy-plugin-spec1.lua ~/.config/nvim/lua/plugins/spec1.lua
 
 # install language servers
 # bash ~/git/linux-config/sub-scripts/nvim-language-servers-install.sh
