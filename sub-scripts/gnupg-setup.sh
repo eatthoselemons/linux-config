@@ -1,6 +1,8 @@
 source ~/git/linux-bash-tools/libs/error-handling.shlib
 # adding gnupg for gpg-agent to manage ssh keys
+function addToBashrc {
 cat << 'EOF' >> $HOME/.bashrc
+
 # set gpg-agent as default
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
@@ -9,7 +11,15 @@ fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 EOF
+}
 
+
+if grep -Fxq "gpg-connect-agent updatestartuptty /bye >/dev/null" $HOME/.bashrc
+then
+  echo "gpg-agent already in bashrc"
+else
+  addToBashrc
+fi
 
 # mlocate database cronjob
 
