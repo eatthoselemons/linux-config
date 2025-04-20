@@ -9,7 +9,7 @@ osType=$(cat /etc/issue)
 sudo pacman -Syu --noconfirm base-devel make clang
 
 echo "installing prerequisite utilities"
-sudo pacman -S --noconfirm git vim universal-ctags neovim mlocate
+sudo pacman -S --noconfirm git vim universal-ctags neovim plocate
 
 # install display manager
 echo "installing xmonad"

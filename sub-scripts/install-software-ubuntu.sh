@@ -9,7 +9,7 @@ osType=$(cat /etc/issue)
 sudo apt-get install -y make clang
 
 echo "installing prerequisite utilities"
-sudo apt-get install -y git vim universal-ctags neovim mlocate curl
+sudo apt-get install -y git vim universal-ctags neovim plocate curl
 
 # install display manager
 echo "installing xmonad"
