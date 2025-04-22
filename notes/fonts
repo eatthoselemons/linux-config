@@ -9,3 +9,6 @@ use:
 $ fc-list : family style
 
 to find what families are available, if the family is not right or the style then the monospace will be all messed up
+
+
+get powerline font from: https://github.com/powerline/fonts
