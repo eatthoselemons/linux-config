@@ -21,7 +21,7 @@ sudo apt-get install -y git firefox udisks2 ripgrep pavucontrol gnupg usbutils u
 
 # install fonts with Asian typefonts
 echo "installing additional typefonts"
-sudo apt-get install -y ttf-wqy-microhei
+sudo apt-get install -y fonts-wqy-microhei
 
 # install alacritty
 echo "installing alacritty terminal emulator"
